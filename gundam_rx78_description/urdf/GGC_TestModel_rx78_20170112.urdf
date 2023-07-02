@@ -58,6 +58,7 @@
       </geometry>
     </collision>
   </link>
+
   <joint name="torso_waist_y" type="revolute">
     <origin xyz="1e-07 0.0 12.0" rpy="0.0 -0.0 1.57079632679"/>
     <axis xyz="0 0 1"/>
@@ -66,6 +67,7 @@
     <limit effort="1000000000" lower="-0.261799387799" upper="0.261799387799" velocity="1000000"/>
     <dynamics damping="3e2" friction="1e3"/>
   </joint>
+
   <link name="rx78_Null_017_link">
     <inertial>
       <origin xyz="-0.000151166281842 0.0444146682653 0.991438302585" rpy="3.11500705668 0.000138034696992 2.85273166442e-06"/>
@@ -83,6 +85,7 @@
       </geometry>
     </collision>
   </link>
+
   <joint name="torso_waist_p" type="revolute">
     <origin xyz="0.0 0.0 0.8" rpy="0.0 -0.0 0.0"/>
     <axis xyz="1 0 0"/>
@@ -91,6 +94,7 @@
     <limit effort="1000000000" lower="-0.785398163397" upper="0.785398163397" velocity="1000000"/>
     <dynamics damping="3e2" friction="1e3"/>
   </joint>
+  
   <link name="rx78_Null_016_link">
     <inertial>
       <origin xyz="-0.0726424680619 -0.0380248436623 0.930846884303" rpy="-0.607699488506 -0.0994779447075 0.00940129416869"/>
@@ -108,6 +112,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="torso_waist_p2" type="revolute">
     <origin xyz="0.0 0.0028689 1.07753" rpy="0.0 -0.0 0.0"/>
     <axis xyz="1 0 0"/>
@@ -116,6 +121,7 @@
     <limit effort="1000000000" lower="-0.785398163397" upper="0.785398163397" velocity="1000000"/>
     <dynamics damping="3e2" friction="1e3"/>
   </joint>
+  
   <link name="rx78_Null_015_link">
     <inertial>
       <origin xyz="-0.00295920061547 -0.128790988082 0.61337128057" rpy="1.43311521698 -0.765253355958 1.75807956225"/>
@@ -133,6 +139,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="head_neck_y" type="revolute">
     <origin xyz="0.0 0.36632 1.42247" rpy="0.0 -0.0 0.0"/>
     <axis xyz="0 0 1"/>
@@ -141,6 +148,7 @@
     <limit effort="1000000000" lower="-1.57079632679" upper="1.57079632679" velocity="1000000"/>
     <dynamics damping="3e2" friction="1e3"/>
   </joint>
+  
   <link name="rx78_Null_014_link">
     <inertial>
       <origin xyz="0.00169756419171 0.00235523766687 0.827090393182" rpy="2.91191076245 -1.44318878177 -1.41358502465"/>
@@ -158,6 +166,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="head_neck_p" type="revolute">
     <origin xyz="0.0 -0.134118 0.928577" rpy="0.0 -0.0 0.0"/>
     <axis xyz="1 0 0"/>
@@ -166,6 +175,7 @@
     <limit effort="1000000000" lower="-0.628318530718" upper="0.785398163397" velocity="1000000"/>
     <dynamics damping="3e2" friction="1e3"/>
   </joint>
+  
   <link name="rx78_Null_013_link">
     <inertial>
       <origin xyz="1.78778706767 2.53845919233e-06 0.587906757513" rpy="-1.49162451874 3.81588883824e-07 1.57079778555"/>
@@ -183,23 +193,27 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="rx78_Null_013_joint" type="fixed">
     <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 1.57079532679"/>
     <parent link="rx78_Null_016_link"/>
     <child link="rx78_Null_013_link"/>
   </joint>
+  
   <link name="rx78_Null_012_link"/>
   <joint name="rx78_Null_012_joint" type="fixed">
     <origin xyz="1.84712 -1.5585 1.94337" rpy="0.0 -0.0 -1.57079532679"/>
     <parent link="rx78_Null_013_link"/>
     <child link="rx78_Null_012_link"/>
   </joint>
+  
   <link name="rx78_Null_011_link"/>
   <joint name="rx78_Null_011_joint" type="fixed">
     <origin xyz="5e-07 -2e-07 1.2322" rpy="0.0 -0.0 0.785398163397"/>
     <parent link="rx78_Null_012_link"/>
     <child link="rx78_Null_011_link"/>
   </joint>
+  
   <link name="rx78_Null_010_link">
     <inertial>
       <origin xyz="0.00161776379369 0.000169039844016 -0.189386999037" rpy="-1.55866597776 -1.56924902496 -0.0191056860432"/>
@@ -217,23 +231,27 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="rx78_Null_010_joint" type="fixed">
     <origin xyz="0.0 -1e-07 1.5e-06" rpy="0.0 -0.0 0.0"/>
     <parent link="rx78_Null_011_link"/>
     <child link="rx78_Null_010_link"/>
   </joint>
+  
   <link name="rx78_Null_009_link"/>
   <joint name="rx78_Null_009_joint" type="fixed">
     <origin xyz="1.84713 1.55851 1.94337" rpy="0.0 -0.0 -1.57079532679"/>
     <parent link="rx78_Null_013_link"/>
     <child link="rx78_Null_009_link"/>
   </joint>
+  
   <link name="rx78_Null_007_link"/>
   <joint name="rx78_Null_007_joint" type="fixed">
     <origin xyz="-7e-07 4e-07 1.2322" rpy="0.0 -0.0 -0.785398163397"/>
     <parent link="rx78_Null_009_link"/>
     <child link="rx78_Null_007_link"/>
   </joint>
+  
   <link name="rx78_Null_008_link">
     <inertial>
       <origin xyz="7.72765510661e-05 0.000199478688868 -0.189386743657" rpy="-0.841721523232 -1.57079502433 -0.759435924784"/>
@@ -251,11 +269,13 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="rx78_Null_008_joint" type="fixed">
     <origin xyz="0.0 -3e-07 0.0" rpy="0.0 -0.0 0.0"/>
     <parent link="rx78_Null_007_link"/>
     <child link="rx78_Null_008_link"/>
   </joint>
+  
   <link name="rx78_Null_005_addition_null0_link">
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -269,6 +289,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="torso_rthrust_p" type="revolute">
     <origin xyz="2.09633 0.644753 -0.765126" rpy="0.0 -0.0 -1.57079532679"/>
     <axis xyz="1 0 0"/>
@@ -277,6 +298,7 @@
     <limit effort="1000000000" lower="-0.785398163397" upper="1.57079632679" velocity="1000000"/>
     <dynamics damping="3e2" friction="1e3"/>
   </joint>
+  
   <link name="rx78_Null_005_link">
     <inertial>
       <origin xyz="-0.000248989486664 0.000274838493809 -0.468519908395" rpy="0.342346564952 -1.57076750978 -1.91314292085"/>
@@ -294,6 +316,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="torso_rthrust_r" type="revolute">
     <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
     <axis xyz="0 1 0"/>
@@ -302,6 +325,7 @@
     <limit effort="1000000000" lower="-0.785398163397" upper="0.785398163397" velocity="1000000"/>
     <dynamics damping="3e2" friction="1e3"/>
   </joint>
+  
   <link name="rx78_Null_006_addition_null0_link">
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -315,6 +339,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="torso_lthrust_p" type="revolute">
     <origin xyz="2.09633 -0.644748 -0.765126" rpy="0.0 -0.0 -1.57079532679"/>
     <axis xyz="1 0 0"/>
@@ -323,6 +348,7 @@
     <limit effort="1000000000" lower="-0.785398163397" upper="1.57079632679" velocity="1000000"/>
     <dynamics damping="3e2" friction="1e3"/>
   </joint>
+  
   <link name="rx78_Null_006_link">
     <inertial>
       <origin xyz="0.000248379892666 0.000274838705763 -0.468519908846" rpy="-0.34336159314 -1.57076748184 -1.22743374025"/>
@@ -340,6 +366,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="torso_lthrust_r" type="revolute">
     <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
     <axis xyz="0 1 0"/>
@@ -348,6 +375,7 @@
     <limit effort="1000000000" lower="-0.785398163397" upper="0.785398163397" velocity="1000000"/>
     <dynamics damping="3e2" friction="1e3"/>
   </joint>
+  
   <link name="rx78_Null_004_link">
     <inertial>
       <origin xyz="0.341759615815 -0.0220562051617 9.54991843459e-06" rpy="-0.00383508360084 -1.07108522052e-08 1.40070368306e-07"/>
@@ -365,6 +393,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="larm_shoulder_p" type="revolute">
     <origin xyz="1.72 0.369688 1.07247" rpy="0.0 -0.0 0.0"/>
     <axis xyz="1 0 0"/>
@@ -373,6 +402,7 @@
     <limit effort="1000000000" lower="-3.14159265359" upper="1.57079632679" velocity="1000000"/>
     <dynamics damping="3e2" friction="1e3"/>
   </joint>
+  
   <link name="rx78_Null_001_link">
     <inertial>
       <origin xyz="0.0144159904596 -0.00124192654743 0.0277909385279" rpy="1.35401826289 0.937406918108 0.0310383238134"/>
@@ -390,6 +420,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="larm_shoulder_r" type="revolute">
     <origin xyz="0.93 -0.0191881 0.0" rpy="0.0 -0.0 0.0"/>
     <axis xyz="0 -1 0"/>
@@ -398,6 +429,7 @@
     <limit effort="1000000000" lower="-0.523598775598" upper="1.57079632679" velocity="1000000"/>
     <dynamics damping="3e2" friction="1e3"/>
   </joint>
+  
   <link name="rx78_Null_002_link">
     <inertial>
       <origin xyz="-4.99261195306e-05 -0.0030844763332 -0.724959207209" rpy="-1.56508502589 1.53267061853 -1.56538578941"/>
@@ -415,6 +447,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="larm_shoulder_y" type="revolute">
     <origin xyz="4e-07 0.0 -0.604907" rpy="0.0 -0.0 0.0"/>
     <axis xyz="0 0 1"/>
@@ -423,6 +456,7 @@
     <limit effort="1000000000" lower="-1.57079632679" upper="1.57079632679" velocity="1000000"/>
     <dynamics damping="3e2" friction="1e3"/>
   </joint>
+  
   <link name="rx78_Null_003_link">
     <inertial>
       <origin xyz="0.00511747338487 0.0432935876575 0.0125042452527" rpy="1.96137980272 -1.42267138919 -2.18134944725"/>
@@ -440,6 +474,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="larm_elbow_p" type="revolute">
     <origin xyz="-2e-07 3.09e-05 -1.55024" rpy="0.0 -0.0 0.0"/>
     <axis xyz="1 0 0"/>
@@ -448,6 +483,7 @@
     <limit effort="1000000000" lower="-1.0471975512" upper="0.1308996939" velocity="1000000"/>
     <dynamics damping="3e2" friction="1e3"/>
   </joint>
+  
   <link name="rx78_Null_066_link">
     <inertial>
       <origin xyz="0.00100592340491 0.00432519030651 -1.37935389553" rpy="-0.0921351120103 -1.56893026006 0.119178150447"/>
@@ -465,6 +501,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="larm_elbow_p2" type="revolute">
     <origin xyz="0.0 0.0 0.0" rpy="-9.99999997475e-07 -0.0 0.0"/>
     <axis xyz="1 0 0"/>
@@ -473,6 +510,7 @@
     <limit effort="1000000000" lower="-1.0471975512" upper="0.1308996939" velocity="1000000"/>
     <dynamics damping="3e2" friction="1e3"/>
   </joint>
+  
   <link name="rx78_Null_067_link">
     <inertial>
       <origin xyz="0.0637291313185 -0.000549129312069 -0.0667506578168" rpy="1.57250508518 1.3652824771 0.00153963424253"/>
@@ -490,6 +528,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="larm_wrist_y" type="revolute">
     <origin xyz="-8e-07 -3.07e-05 -2.51486" rpy="0.0 9.99999997475e-07 0.0"/>
     <axis xyz="0 0 1"/>
@@ -498,6 +537,7 @@
     <limit effort="1000000000" lower="-1.57079632679" upper="1.57079632679" velocity="1000000"/>
     <dynamics damping="3e2" friction="1e3"/>
   </joint>
+  
   <link name="rx78_Null_069_link">
     <inertial>
       <origin xyz="-0.0921965185769 0.00106799276993 -0.365632777877" rpy="1.55541267479 -0.75656602586 1.59074154928"/>
@@ -515,6 +555,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="larm_wrist_r" type="revolute">
     <origin xyz="0.136895 -1e-07 -0.239744" rpy="9.99999997475e-07 -0.0 0.0"/>
     <axis xyz="0 -1 0"/>
@@ -523,6 +564,7 @@
     <limit effort="1000000000" lower="-1.57079632679" upper="1.57079632679" velocity="1000000"/>
     <dynamics damping="3e2" friction="1e3"/>
   </joint>
+  
   <link name="rx78_Null_068_link">
     <inertial>
       <origin xyz="-0.0110922897192 0.000630381578393 -0.121403679652" rpy="1.55815632948 1.48889465655 0.00612439029331"/>
@@ -540,6 +582,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="larm_gripper_middle0_mimic" type="revolute">
     <origin xyz="-0.0683784 0.310822 -0.782966" rpy="-9.99999997475e-07 -0.0 0.0"/>
     <axis xyz="0 1 0"/>
@@ -549,6 +592,7 @@
     <dynamics damping="3e2" friction="1e3"/>
     <mimic joint="larm_gripper" multiplier="1.0"/>
   </joint>
+  
   <link name="rx78_Null_070_link">
     <inertial>
       <origin xyz="0.0254243833512 -5.88064824121e-07 -0.18318453849" rpy="-0.557131102339 -1.57079268417 2.1279182466"/>
@@ -566,6 +610,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="larm_gripper_middle1_mimic" type="revolute">
     <origin xyz="-0.0498726 -8e-07 -0.295345" rpy="0.0 -0.0 0.0"/>
     <axis xyz="0 1 0"/>
@@ -575,6 +620,7 @@
     <dynamics damping="3e2" friction="1e3"/>
     <mimic joint="larm_gripper" multiplier="1.0"/>
   </joint>
+  
   <link name="rx78_Null_071_link">
     <inertial>
       <origin xyz="0.0373853061412 -2.26721840637e-07 -0.175094463523" rpy="-1.57088599529 -1.54962703686 9.60535197295e-05"/>
@@ -592,6 +638,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="larm_gripper_middle2_mimic" type="revolute">
     <origin xyz="1e-06 2e-07 -0.366374" rpy="-9.00000031809e-06 -4.99999987365e-06 0.0"/>
     <axis xyz="0 1 0"/>
@@ -601,6 +648,7 @@
     <dynamics damping="3e2" friction="1e3"/>
     <mimic joint="larm_gripper" multiplier="1.0"/>
   </joint>
+  
   <link name="rx78_Null_072_link">
     <inertial>
       <origin xyz="-0.0110922828006 0.000630772215227 -0.121403660586" rpy="1.55815579991 1.48889557826 0.00611811197789"/>
@@ -618,6 +666,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="larm_gripper_ring0_mimic" type="revolute">
     <origin xyz="-0.0683781 0.0989056 -0.842841" rpy="-9.99999997475e-07 -0.0 0.0"/>
     <axis xyz="0 1 0"/>
@@ -627,6 +676,7 @@
     <dynamics damping="3e2" friction="1e3"/>
     <mimic joint="larm_gripper" multiplier="1.0"/>
   </joint>
+  
   <link name="rx78_Null_073_link">
     <inertial>
       <origin xyz="0.0254248666659 -8.11582940447e-07 -0.183184528966" rpy="-0.542959645179 -1.57079262809 2.11374270423"/>
@@ -644,6 +694,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="larm_gripper_ring1_mimic" type="revolute">
     <origin xyz="-0.0498724 -7e-07 -0.295345" rpy="0.0 -0.0 0.0"/>
     <axis xyz="0 1 0"/>
@@ -653,6 +704,7 @@
     <dynamics damping="3e2" friction="1e3"/>
     <mimic joint="larm_gripper" multiplier="1.0"/>
   </joint>
+  
   <link name="rx78_Null_074_link">
     <inertial>
       <origin xyz="0.0373852082779 -2.67240520792e-07 -0.175095128318" rpy="-1.57089195754 -1.54962703032 9.56077324422e-05"/>
@@ -670,6 +722,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="larm_gripper_ring2_mimic" type="revolute">
     <origin xyz="1.5e-06 1e-07 -0.366374" rpy="-7.99999997963e-06 -4.99999987365e-06 0.0"/>
     <axis xyz="0 1 0"/>
@@ -679,6 +732,7 @@
     <dynamics damping="3e2" friction="1e3"/>
     <mimic joint="larm_gripper" multiplier="1.0"/>
   </joint>
+  
   <link name="rx78_Null_075_link">
     <inertial>
       <origin xyz="-0.0110919719139 0.00063014985517 -0.121403666309" rpy="1.55815383555 1.48889480872 0.00612028991399"/>
@@ -696,6 +750,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="larm_gripper_little0_mimic" type="revolute">
     <origin xyz="-0.0683781 -0.105633 -0.877139" rpy="-9.99999997475e-07 -0.0 0.0"/>
     <axis xyz="0 1 0"/>
@@ -705,6 +760,7 @@
     <dynamics damping="3e2" friction="1e3"/>
     <mimic joint="larm_gripper" multiplier="1.0"/>
   </joint>
+  
   <link name="rx78_Null_076_link">
     <inertial>
       <origin xyz="0.0254251617069 -7.23899647137e-07 -0.183184423155" rpy="-0.626080973343 -1.57079251676 2.1968692888"/>
@@ -722,6 +778,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="larm_gripper_little1_mimic" type="revolute">
     <origin xyz="-0.0498724 -7e-07 -0.295345" rpy="0.0 -0.0 0.0"/>
     <axis xyz="0 1 0"/>
@@ -731,6 +788,7 @@
     <dynamics damping="3e2" friction="1e3"/>
     <mimic joint="larm_gripper" multiplier="1.0"/>
   </joint>
+  
   <link name="rx78_Null_077_link">
     <inertial>
       <origin xyz="0.0373859112126 -5.33698315504e-07 -0.175095145688" rpy="-1.57091281127 -1.5496297216 0.000122590732961"/>
@@ -748,6 +806,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="larm_gripper_little2_mimic" type="revolute">
     <origin xyz="1e-06 2e-07 -0.366374" rpy="-6.00000021215e-06 -4.99999987365e-06 0.0"/>
     <axis xyz="0 1 0"/>
@@ -757,6 +816,7 @@
     <dynamics damping="3e2" friction="1e3"/>
     <mimic joint="larm_gripper" multiplier="1.0"/>
   </joint>
+  
   <link name="rx78_Null_059_link">
     <inertial>
       <origin xyz="-0.0110918509989 0.000630320268856 -0.121403663375" rpy="1.55815884987 1.4888940348 0.00612161911496"/>
@@ -774,6 +834,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="larm_gripper_index0_mimic" type="revolute">
     <origin xyz="-0.0683779 -0.31073 -0.853204" rpy="-9.99999997475e-07 -0.0 0.0"/>
     <axis xyz="0 1 0"/>
@@ -783,6 +844,7 @@
     <dynamics damping="3e2" friction="1e3"/>
     <mimic joint="larm_gripper" multiplier="1.0"/>
   </joint>
+  
   <link name="rx78_Null_060_link">
     <inertial>
       <origin xyz="0.0254241426418 -9.5101421139e-07 -0.183184960193" rpy="0.22193897319 -1.57079131916 1.34884297607"/>
@@ -800,6 +862,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="larm_gripper_index1_mimic" type="revolute">
     <origin xyz="-0.0498724 -9e-07 -0.295346" rpy="0.0 -9.99999997475e-07 0.0"/>
     <axis xyz="0 1 0"/>
@@ -809,6 +872,7 @@
     <dynamics damping="3e2" friction="1e3"/>
     <mimic joint="larm_gripper" multiplier="1.0"/>
   </joint>
+  
   <link name="rx78_Null_061_link">
     <inertial>
       <origin xyz="0.0373854289676 -3.68076238062e-07 -0.175097290045" rpy="-1.57069419884 1.54962987383 -3.14149471802"/>
@@ -826,6 +890,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="larm_gripper_index2_mimic" type="revolute">
     <origin xyz="1e-06 0.0 -0.366374" rpy="-7.0000000959e-06 -4.99999987365e-06 0.0"/>
     <axis xyz="0 1 0"/>
@@ -835,6 +900,7 @@
     <dynamics damping="3e2" friction="1e3"/>
     <mimic joint="larm_gripper" multiplier="1.0"/>
   </joint>
+  
   <link name="rx78_Null_062_link">
     <inertial>
       <origin xyz="-1.30273915108e-05 -0.121293462202 -0.00459711890337" rpy="1.56843108118 -0.337788468633 1.56904194024"/>
@@ -852,6 +918,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="larm_gripper" type="revolute">
     <origin xyz="-0.265212 -0.284142 -0.0825119" rpy="0.0 1.99999999495e-06 0.0"/>
     <axis xyz="0 1 0"/>
@@ -860,6 +927,7 @@
     <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
     <dynamics damping="3e2" friction="1e3"/>
   </joint>
+  
   <link name="rx78_Null_063_link">
     <inertial>
       <origin xyz="-4.60884019962e-05 -0.0254977644169 -0.183123111681" rpy="0.512304698221 1.57079455531 0.512300208958"/>
@@ -877,6 +945,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="larm_gripper_thumb1_mimic" type="revolute">
     <origin xyz="4e-07 -0.248849 -0.170409" rpy="0.0 -0.0 0.0"/>
     <axis xyz="1 0 0"/>
@@ -886,6 +955,7 @@
     <dynamics damping="3e2" friction="1e3"/>
     <mimic joint="larm_gripper" multiplier="1.0" offset="-0.785398163397"/>
   </joint>
+  
   <link name="rx78_Null_064_link">
     <inertial>
       <origin xyz="-4.65290834003e-05 -0.0374335664999 -0.175089267918" rpy="1.57081492166 1.54962955498 1.57081696167"/>
@@ -903,6 +973,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="larm_gripper_thumb2_mimic" type="revolute">
     <origin xyz="1.7e-06 -2.49e-05 -0.366318" rpy="-9.99999997475e-07 -0.0 0.0"/>
     <axis xyz="1 0 0"/>
@@ -912,12 +983,14 @@
     <dynamics damping="3e2" friction="1e3"/>
     <mimic joint="larm_gripper" multiplier="1.0"/>
   </joint>
+  
   <link name="rx78_Null_065_link"/>
   <joint name="rx78_Null_065_joint" type="fixed">
     <origin xyz="-4e-07 0.0 0.0" rpy="0.0 -0.0 0.0"/>
     <parent link="rx78_Null_066_link"/>
     <child link="rx78_Null_065_link"/>
   </joint>
+  
   <link name="rx78_Null_048_link">
     <inertial>
       <origin xyz="0.757762615062 -0.00286700841015 0.29798742369" rpy="3.14154428198 -0.858695371579 6.82204940369e-05"/>
@@ -935,11 +1008,13 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="rx78_Null_048_joint" type="fixed">
     <origin xyz="0.28 -0.019188 0.0" rpy="0.0 -0.0 0.0"/>
     <parent link="rx78_Null_004_link"/>
     <child link="rx78_Null_048_link"/>
   </joint>
+  
   <link name="rx78_Null_049_link">
     <inertial>
       <origin xyz="-0.341759469554 -0.00286842907886 2.14474281231e-05" rpy="-0.000805253061973 6.083704851e-08 1.75257035591e-07"/>
@@ -957,6 +1032,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="rarm_shoulder_p" type="revolute">
     <origin xyz="-1.72 0.35 1.07245" rpy="0.0 -0.0 0.0"/>
     <axis xyz="1 0 0"/>
@@ -965,6 +1041,7 @@
     <limit effort="1000000000" lower="-3.14159265359" upper="1.57079632679" velocity="1000000"/>
     <dynamics damping="3e2" friction="1e3"/>
   </joint>
+  
   <link name="rx78_Null_050_link">
     <inertial>
       <origin xyz="-0.0316912986672 -0.00236679793645 0.0369316741377" rpy="1.5707989413 1.36931310995 3.52057973764e-06"/>
@@ -982,6 +1059,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="rarm_shoulder_r" type="revolute">
     <origin xyz="-0.93 -4e-07 2.29e-05" rpy="0.0 1.99999999495e-06 0.0"/>
     <axis xyz="0 -1 0"/>
@@ -990,6 +1068,7 @@
     <limit effort="1000000000" lower="-1.57079632679" upper="0.523598775598" velocity="1000000"/>
     <dynamics damping="3e2" friction="1e3"/>
   </joint>
+  
   <link name="rx78_Null_051_link">
     <inertial>
       <origin xyz="0.000564790768457 -0.00195265214026 -0.716757097172" rpy="-1.68084860405 1.51629173751 -1.66754887886"/>
@@ -1007,6 +1086,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="rarm_shoulder_y" type="revolute">
     <origin xyz="1e-06 -9e-07 -0.604907" rpy="0.0 -1.99999999495e-06 0.0"/>
     <axis xyz="0 0 1"/>
@@ -1015,6 +1095,7 @@
     <limit effort="1000000000" lower="-1.57079632679" upper="1.57079632679" velocity="1000000"/>
     <dynamics damping="3e2" friction="1e3"/>
   </joint>
+
   <link name="rx78_Null_052_link">
     <inertial>
       <origin xyz="-0.00345374254625 0.0710721265817 0.00216517752857" rpy="1.30212539629 -1.31900697169 1.93765236648"/>
@@ -1032,6 +1113,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="rarm_elbow_p" type="revolute">
     <origin xyz="6e-07 2.88e-05 -1.55024" rpy="-3.0000001061e-06 -9.99999997475e-07 0.0"/>
     <axis xyz="1 0 0"/>
@@ -1040,6 +1122,7 @@
     <limit effort="1000000000" lower="-1.0471975512" upper="0.1308996939" velocity="1000000"/>
     <dynamics damping="3e2" friction="1e3"/>
   </joint>
+  
   <link name="rx78_Null_053_link">
     <inertial>
       <origin xyz="-0.00275576910103 -0.00110344318693 -1.35789645655" rpy="0.923029235723 1.5571424345 -2.22133499466"/>
@@ -1057,6 +1140,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="rarm_elbow_p2" type="revolute">
     <origin xyz="2e-07 0.0 0.0" rpy="1.99999999495e-06 -0.0 0.0"/>
     <axis xyz="1 0 0"/>
@@ -1065,6 +1149,7 @@
     <limit effort="1000000000" lower="-1.0471975512" upper="0.1308996939" velocity="1000000"/>
     <dynamics damping="3e2" friction="1e3"/>
   </joint>
+  
   <link name="rx78_Null_054_link">
     <inertial>
       <origin xyz="-0.063728784388 -3.47682587857e-05 -0.0667593333801" rpy="-1.57250911436 1.36528341468 3.14004951952"/>
@@ -1082,6 +1167,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="rarm_wrist_y" type="revolute">
     <origin xyz="-1e-06 -3.74e-05 -2.51486" rpy="-9.99999997475e-07 -1.99999999495e-06 0.0"/>
     <axis xyz="0 0 1"/>
@@ -1090,6 +1176,7 @@
     <limit effort="1000000000" lower="-1.57079632679" upper="1.57079632679" velocity="1000000"/>
     <dynamics damping="3e2" friction="1e3"/>
   </joint>
+  
   <link name="rx78_Null_055_link">
     <inertial>
       <origin xyz="0.0921745487889 0.00158343270366 -0.395640286388" rpy="1.58618213196 -0.756564122742 1.55085045194"/>
@@ -1107,6 +1194,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="rarm_wrist_r" type="revolute">
     <origin xyz="-0.136881 -1e-07 -0.209745" rpy="1.99999999495e-06 1.99999999495e-06 0.0"/>
     <axis xyz="0 -1 0"/>
@@ -1115,6 +1203,7 @@
     <limit effort="1000000000" lower="-1.57079632679" upper="1.57079632679" velocity="1000000"/>
     <dynamics damping="3e2" friction="1e3"/>
   </joint>
+  
   <link name="rx78_Null_056_link">
     <inertial>
       <origin xyz="1.30989542991e-05 -0.121293452341 -0.00459480567615" rpy="1.57316518734 -0.337785810697 1.57255010494"/>
@@ -1132,6 +1221,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="rarm_gripper" type="revolute">
     <origin xyz="0.2652 -0.284142 -0.112511" rpy="0.0 -0.0 0.0"/>
     <axis xyz="0 -1 0"/>
@@ -1140,6 +1230,7 @@
     <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
     <dynamics damping="3e2" friction="1e3"/>
   </joint>
+  
   <link name="rx78_Null_057_link">
     <inertial>
       <origin xyz="4.66026768099e-05 -0.0254980798052 -0.183122145539" rpy="-2.60331362051 -1.57079506749 -0.538288983058"/>
@@ -1157,6 +1248,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="rarm_gripper_thumb1_mimic" type="revolute">
     <origin xyz="-6e-07 -0.248848 -0.170409" rpy="-1.99999999495e-06 1.99999999495e-06 0.0"/>
     <axis xyz="1 0 0"/>
@@ -1166,6 +1258,7 @@
     <dynamics damping="3e2" friction="1e3"/>
     <mimic joint="rarm_gripper" multiplier="1.0" offset="-0.785398163397"/>
   </joint>
+  
   <link name="rx78_Null_058_link">
     <inertial>
       <origin xyz="4.6167238092e-05 -0.0374345635809 -0.175090186997" rpy="1.57096073188 1.54963305308 1.57096272179"/>
@@ -1183,6 +1276,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="rarm_gripper_thumb2_mimic" type="revolute">
     <origin xyz="4e-07 -2.54e-05 -0.366319" rpy="0.0 -1.99999999495e-06 0.0"/>
     <axis xyz="1 0 0"/>
@@ -1192,6 +1286,7 @@
     <dynamics damping="3e2" friction="1e3"/>
     <mimic joint="rarm_gripper" multiplier="1.0"/>
   </joint>
+  
   <link name="rx78_Null_021_link">
     <inertial>
       <origin xyz="0.01105837616 0.000629701941906 -0.121405072267" rpy="-1.55815208982 1.48889088527 3.13547753345"/>
@@ -1209,6 +1304,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="rarm_gripper_middle0_mimic" type="revolute">
     <origin xyz="0.068401 -0.105633 -0.907139" rpy="0.0 -0.0 0.0"/>
     <axis xyz="0 -1 0"/>
@@ -1218,6 +1314,7 @@
     <dynamics damping="3e2" friction="1e3"/>
     <mimic joint="rarm_gripper" multiplier="1.0"/>
   </joint>
+  
   <link name="rx78_Null_022_link">
     <inertial>
       <origin xyz="-0.0254249014477 -9.69275172196e-07 -0.183183600739" rpy="-2.20036095392 -1.5707920767 0.629565330986"/>
@@ -1235,6 +1332,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="rarm_gripper_middle1_mimic" type="revolute">
     <origin xyz="0.0498394 -8e-07 -0.295347" rpy="0.0 -0.0 0.0"/>
     <axis xyz="0 -1 0"/>
@@ -1244,6 +1342,7 @@
     <dynamics damping="3e2" friction="1e3"/>
     <mimic joint="rarm_gripper" multiplier="1.0"/>
   </joint>
+  
   <link name="rx78_Null_023_link">
     <inertial>
       <origin xyz="-0.0373858154767 -7.47106866241e-07 -0.175095496522" rpy="1.570910155 -1.549632787 3.14147541343"/>
@@ -1261,6 +1360,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="rarm_gripper_middle2_mimic" type="revolute">
     <origin xyz="-1.1e-06 -1.2e-06 -0.366376" rpy="0.0 -0.0 0.0"/>
     <axis xyz="0 -1 0"/>
@@ -1270,6 +1370,7 @@
     <dynamics damping="3e2" friction="1e3"/>
     <mimic joint="rarm_gripper" multiplier="1.0"/>
   </joint>
+  
   <link name="rx78_Null_024_link">
     <inertial>
       <origin xyz="0.0110581532824 0.00062962567689 -0.121402969126" rpy="-1.55815154438 1.48889023113 3.13547843786"/>
@@ -1287,6 +1388,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="rarm_gripper_index0_mimic" type="revolute">
     <origin xyz="0.0684011 -0.310731 -0.883256" rpy="0.0 -0.0 0.0"/>
     <axis xyz="0 -1 0"/>
@@ -1296,6 +1398,7 @@
     <dynamics damping="3e2" friction="1e3"/>
     <mimic joint="rarm_gripper" multiplier="1.0"/>
   </joint>
+  
   <link name="rx78_Null_025_link">
     <inertial>
       <origin xyz="-0.0254251027454 -7.38867229166e-07 -0.183185393552" rpy="-2.1885058243 -1.57079193482 0.617713340664"/>
@@ -1313,6 +1416,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="rarm_gripper_index1_mimic" type="revolute">
     <origin xyz="0.0498386 -9e-07 -0.295347" rpy="0.0 -0.0 0.0"/>
     <axis xyz="0 -1 0"/>
@@ -1322,6 +1426,7 @@
     <dynamics damping="3e2" friction="1e3"/>
     <mimic joint="rarm_gripper" multiplier="1.0"/>
   </joint>
+  
   <link name="rx78_Null_026_link">
     <inertial>
       <origin xyz="-0.0373863895396 -5.46007794272e-07 -0.175096332328" rpy="1.57066187528 1.5496317769 -0.00013008681642"/>
@@ -1339,6 +1444,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="rarm_gripper_index2_mimic" type="revolute">
     <origin xyz="-1.3e-06 -1e-06 -0.366376" rpy="0.0 -0.0 0.0"/>
     <axis xyz="0 -1 0"/>
@@ -1348,6 +1454,7 @@
     <dynamics damping="3e2" friction="1e3"/>
     <mimic joint="rarm_gripper" multiplier="1.0"/>
   </joint>
+  
   <link name="rx78_Null_027_link">
     <inertial>
       <origin xyz="0.0110578616033 0.000629839343694 -0.121403923632" rpy="-1.55814957571 1.48889068999 3.13547417851"/>
@@ -1365,6 +1472,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="rarm_gripper_little0_mimic" type="revolute">
     <origin xyz="0.0684013 0.310821 -0.812965" rpy="0.0 -0.0 0.0"/>
     <axis xyz="0 -1 0"/>
@@ -1374,6 +1482,7 @@
     <dynamics damping="3e2" friction="1e3"/>
     <mimic joint="rarm_gripper" multiplier="1.0"/>
   </joint>
+  
   <link name="rx78_Null_028_link">
     <inertial>
       <origin xyz="-0.0254246032354 -1.02561798099e-06 -0.183183234988" rpy="-0.893658831543 1.57079184538 -2.46445658322"/>
@@ -1391,6 +1500,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="rarm_gripper_little1_mimic" type="revolute">
     <origin xyz="0.0498386 -8e-07 -0.295347" rpy="0.0 -0.0 0.0"/>
     <axis xyz="0 -1 0"/>
@@ -1400,6 +1510,7 @@
     <dynamics damping="3e2" friction="1e3"/>
     <mimic joint="rarm_gripper" multiplier="1.0"/>
   </joint>
+  
   <link name="rx78_Null_029_link">
     <inertial>
       <origin xyz="-0.0373859989755 -2.58753470556e-07 -0.175095659068" rpy="1.57091259012 -1.54963275324 3.14146813471"/>
@@ -1417,6 +1528,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="rarm_gripper_little2_mimic" type="revolute">
     <origin xyz="-1e-06 -1.1e-06 -0.366376" rpy="0.0 -0.0 0.0"/>
     <axis xyz="0 -1 0"/>
@@ -1426,6 +1538,7 @@
     <dynamics damping="3e2" friction="1e3"/>
     <mimic joint="rarm_gripper" multiplier="1.0"/>
   </joint>
+  
   <link name="rx78_Null_078_link">
     <inertial>
       <origin xyz="0.0110580856946 0.000630036216991 -0.121404191701" rpy="-1.55815828146 1.48889040458 3.13548168598"/>
@@ -1443,6 +1556,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="rarm_gripper_ring0_mimic" type="revolute">
     <origin xyz="0.0684015 0.098905 -0.872841" rpy="0.0 -0.0 0.0"/>
     <axis xyz="0 -1 0"/>
@@ -1452,6 +1566,7 @@
     <dynamics damping="3e2" friction="1e3"/>
     <mimic joint="rarm_gripper" multiplier="1.0"/>
   </joint>
+  
   <link name="rx78_Null_079_link">
     <inertial>
       <origin xyz="-0.0254256479301 -1.11178553666e-06 -0.183184148772" rpy="-2.19452392856 -1.57079196371 0.623735417599"/>
@@ -1469,6 +1584,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="rarm_gripper_ring1_mimic" type="revolute">
     <origin xyz="0.0498388 -9e-07 -0.295347" rpy="-9.99999997475e-07 -0.0 0.0"/>
     <axis xyz="0 -1 0"/>
@@ -1478,6 +1594,7 @@
     <dynamics damping="3e2" friction="1e3"/>
     <mimic joint="rarm_gripper" multiplier="1.0"/>
   </joint>
+  
   <link name="rx78_Null_080_link">
     <inertial>
       <origin xyz="-0.0373865496779 -6.52731251122e-07 -0.175096688328" rpy="1.57068315575 1.54963299736 -0.000112486955871"/>
@@ -1495,6 +1612,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="rarm_gripper_ring2_mimic" type="revolute">
     <origin xyz="-1.1e-06 -1e-06 -0.366376" rpy="0.0 -0.0 0.0"/>
     <axis xyz="0 -1 0"/>
@@ -1504,6 +1622,7 @@
     <dynamics damping="3e2" friction="1e3"/>
     <mimic joint="rarm_gripper" multiplier="1.0"/>
   </joint>
+  
   <link name="rx78_Null_081_link">
     <inertial>
       <origin xyz="-0.779971464671 0.00259695623861 0.310184206904" rpy="-0.611284672866 -0.60118272567 -2.2702328905"/>
@@ -1521,17 +1640,20 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="rx78_Null_081_joint" type="fixed">
     <origin xyz="-0.279999 -4e-07 3.05e-05" rpy="-3.0000001061e-06 -0.0 0.0"/>
     <parent link="rx78_Null_049_link"/>
     <child link="rx78_Null_081_link"/>
   </joint>
+  
   <link name="rx78_Null_082_link"/>
   <joint name="rx78_Null_082_joint" type="fixed">
     <origin xyz="-5e-07 -1.30287 -0.837529" rpy="0.0349060820064 -0.0 0.0"/>
     <parent link="rx78_Null_016_link"/>
     <child link="rx78_Null_082_link"/>
   </joint>
+  
   <link name="rx78_Null_083_link">
     <inertial>
       <origin xyz="0.00465368143716 -0.0303856495598 -0.284001144339" rpy="1.58201312706 0.047470470209 -1.56977052882"/>
@@ -1549,11 +1671,13 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="rx78_Null_083_joint" type="fixed">
     <origin xyz="0.0 0.0 11.5" rpy="0.0 -0.0 1.57079632679"/>
     <parent link="base_link"/>
     <child link="rx78_Null_083_link"/>
   </joint>
+  
   <link name="rx78_Null_084_link">
     <inertial>
       <origin xyz="-0.451486735878 -0.232703353033 -0.681505055795" rpy="1.43719365047 1.40508022813 -0.110554559796"/>
@@ -1571,6 +1695,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="rleg_crotch_p_front_mimic" type="revolute">
     <origin xyz="-0.76 -1.09713 0.469961" rpy="0.0 -0.0 0.0"/>
     <axis xyz="1 0 0"/>
@@ -1580,6 +1705,7 @@
     <dynamics damping="3e2" friction="1e3"/>
     <mimic joint="rleg_crotch_p" multiplier="0.5"/>
   </joint>
+  
   <link name="rx78_Null_031_link">
     <inertial>
       <origin xyz="-0.43151187724 0.253007678525 -0.681617729826" rpy="1.43747196906 -1.40542884503 -3.03124447499"/>
@@ -1597,6 +1723,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="rleg_crotch_p_back_mimic" type="revolute">
     <origin xyz="-0.76 1.10287 0.470002" rpy="0.0 -0.0 0.0"/>
     <axis xyz="1 0 0"/>
@@ -1606,6 +1733,7 @@
     <dynamics damping="3e2" friction="1e3"/>
     <mimic joint="rleg_crotch_p" multiplier="0.5"/>
   </joint>
+  
   <link name="rx78_Null_032_link">
     <inertial>
       <origin xyz="-0.22393887551 -0.00286880230612 -0.491257256755" rpy="-4.80069702412e-07 1.50313514013 -8.14080038208e-07"/>
@@ -1623,6 +1751,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="rleg_crotch_r_mimic" type="revolute">
     <origin xyz="-1.82901 0.0028688 0.398817" rpy="0.0 -0.0 0.0"/>
     <axis xyz="0 -1 0"/>
@@ -1632,6 +1761,7 @@
     <dynamics damping="3e2" friction="1e3"/>
     <mimic joint="rleg_crotch_r" multiplier="0.6"/>
   </joint>
+  
   <link name="rx78_Null_033_link">
     <inertial>
       <origin xyz="0.43151207586 0.253007581701 -0.681617755843" rpy="-1.43747369011 -1.4054287784 -0.110346161674"/>
@@ -1649,6 +1779,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="lleg_crotch_p_back_mimic" type="revolute">
     <origin xyz="0.76 1.10287 0.470002" rpy="0.0 -0.0 0.0"/>
     <axis xyz="1 0 0"/>
@@ -1658,6 +1789,7 @@
     <dynamics damping="3e2" friction="1e3"/>
     <mimic joint="lleg_crotch_p" multiplier="0.5"/>
   </joint>
+  
   <link name="rx78_Null_034_link">
     <inertial>
       <origin xyz="0.451512182015 -0.23274532148 -0.681620810725" rpy="-1.43747477266 1.40542875243 -3.03124695517"/>
@@ -1675,6 +1807,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="lleg_crotch_p_front_mimic" type="revolute">
     <origin xyz="0.76 -1.09713 0.470002" rpy="0.0 -0.0 0.0"/>
     <axis xyz="1 0 0"/>
@@ -1684,6 +1817,7 @@
     <dynamics damping="3e2" friction="1e3"/>
     <mimic joint="lleg_crotch_p" multiplier="0.5"/>
   </joint>
+  
   <link name="rx78_Null_047_link">
     <inertial>
       <origin xyz="0.22393911258 -0.00286868105768 -0.491257259692" rpy="3.14159261997 1.5031351592 -3.14159221828"/>
@@ -1701,6 +1835,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="lleg_crotch_r_mimic" type="revolute">
     <origin xyz="1.82901 0.0028688 0.398817" rpy="0.0 -0.0 0.0"/>
     <axis xyz="0 1 0"/>
@@ -1710,6 +1845,7 @@
     <dynamics damping="3e2" friction="1e3"/>
     <mimic joint="lleg_crotch_r" multiplier="-0.6"/>
   </joint>
+  
   <link name="rx78_Null_035_addition_null0_link">
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -1723,6 +1859,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="lleg_crotch_p" type="revolute">
     <origin xyz="1.15 0.0 -0.535484" rpy="0.0 -0.0 0.0"/>
     <axis xyz="1 0 0"/>
@@ -1731,6 +1868,7 @@
     <limit effort="1000000000" lower="-1.57079632679" upper="1.0471975512" velocity="1000000"/>
     <dynamics damping="3e2" friction="1e3"/>
   </joint>
+  
   <link name="rx78_Null_035_link">
     <inertial>
       <origin xyz="0.0135019144334 2.68670539385e-08 -0.0757614412025" rpy="2.55979362589e-06 1.3842209329 2.67360360654e-06"/>
@@ -1748,6 +1886,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="lleg_crotch_r" type="revolute">
     <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
     <axis xyz="0 -1 0"/>
@@ -1756,6 +1895,7 @@
     <limit effort="1000000000" lower="-0.349065850399" upper="0.785398163397" velocity="1000000"/>
     <dynamics damping="3e2" friction="1e3"/>
   </joint>
+  
   <link name="rx78_Null_036_link">
     <inertial>
       <origin xyz="-0.00207627232164 0.00204255139933 -1.31863673939" rpy="1.63965095087 1.56807010045 1.64122862329"/>
@@ -1773,6 +1913,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="lleg_crotch_y" type="revolute">
     <origin xyz="-1e-07 0.0 -0.684516" rpy="0.0 -0.0 0.0"/>
     <axis xyz="0 0 1"/>
@@ -1781,6 +1922,7 @@
     <limit effort="1000000000" lower="-0.785398163397" upper="0.785398163397" velocity="1000000"/>
     <dynamics damping="3e2" friction="1e3"/>
   </joint>
+  
   <link name="rx78_Null_037_link">
     <inertial>
       <origin xyz="-4.54239378063e-07 -0.273481075688 -0.405998448475" rpy="1.57079664461 1.29800693337 1.57079676387"/>
@@ -1798,6 +1940,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="lleg_knee_p" type="revolute">
     <origin xyz="0.0 0.423796 -2.71182" rpy="0.0 -0.0 0.0"/>
     <axis xyz="1 0 0"/>
@@ -1806,6 +1949,7 @@
     <limit effort="1000000000" lower="-0.1308996939" upper="1.0471975512" velocity="1000000"/>
     <dynamics damping="3e2" friction="1e3"/>
   </joint>
+  
   <link name="rx78_Null_038_link">
     <inertial>
       <origin xyz="-0.00305121767144 -0.207919386347 -2.77167128322" rpy="-1.54932008157 -1.49182608357 -1.58283392671"/>
@@ -1823,6 +1967,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="lleg_knee_p2" type="revolute">
     <origin xyz="-3e-07 -0.162996 -0.408183" rpy="-9.99999997475e-07 -0.0 0.0"/>
     <axis xyz="1 0 0"/>
@@ -1831,6 +1976,7 @@
     <limit effort="1000000000" lower="-0.1308996939" upper="1.0471975512" velocity="1000000"/>
     <dynamics damping="3e2" friction="1e3"/>
   </joint>
+  
   <link name="rx78_Null_039_link">
     <inertial>
       <origin xyz="-1.10347495383e-06 -0.350898790503 -0.351270028321" rpy="1.57079502761 -0.226744998929 1.57079613506"/>
@@ -1848,6 +1994,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="lleg_ankle_p" type="revolute">
     <origin xyz="2.8e-06 0.221803 -6.02553" rpy="0.0 1.99999999495e-06 0.0"/>
     <axis xyz="1 0 0"/>
@@ -1856,6 +2003,7 @@
     <limit effort="1000000000" lower="-1.0471975512" upper="1.0471975512" velocity="1000000"/>
     <dynamics damping="3e2" friction="1e3"/>
   </joint>
+  
   <link name="rx78_Null_040_link">
     <inertial>
       <origin xyz="0.299423753427 0.0120209966573 -0.266363524064" rpy="-2.69339193574 -0.0202631114009 1.57202960626"/>
@@ -1873,6 +2021,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="lleg_ankle_r_mimic" type="revolute">
     <origin xyz="1.9e-06 -6e-07 -0.716289" rpy="0.0 -0.0 1.57079632679"/>
     <axis xyz="-1 0 0"/>
@@ -1882,6 +2031,7 @@
     <dynamics damping="3e2" friction="1e3"/>
     <mimic joint="lleg_ankle_r" multiplier="1.0"/>
   </joint>
+  
   <link name="rx78_Null_041_link">
     <inertial>
       <origin xyz="-0.25505132006 0.000625745095782 -0.128349458313" rpy="-3.13340080113 0.225072169641 0.0138419268414"/>
@@ -1899,6 +2049,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="lleg_ankle_r" type="revolute">
     <origin xyz="2.5e-06 -1.44559 -0.716288" rpy="0.0 -0.0 1.57079632679"/>
     <axis xyz="-1 0 0"/>
@@ -1907,30 +2058,35 @@
     <limit effort="1000000000" lower="-0.523598775598" upper="0.523598775598" velocity="1000000"/>
     <dynamics damping="3e2" friction="1e3"/>
   </joint>
+  
   <link name="rx78_Null_042_link"/>
   <joint name="rx78_Null_042_joint" type="fixed">
     <origin xyz="-1.30974 0.373955 -0.538725" rpy="3.14159265359 9.99999997475e-07 -1.57079632679"/>
     <parent link="rx78_Null_041_link"/>
     <child link="rx78_Null_042_link"/>
   </joint>
+  
   <link name="rx78_Null_043_link"/>
   <joint name="rx78_Null_043_joint" type="fixed">
     <origin xyz="-1.30974 -0.374037 -0.538725" rpy="3.14159265359 9.99999997475e-07 -1.57079632679"/>
     <parent link="rx78_Null_041_link"/>
     <child link="rx78_Null_043_link"/>
   </joint>
+  
   <link name="rx78_Null_044_link"/>
   <joint name="rx78_Null_044_joint" type="fixed">
     <origin xyz="0.573261 0.801901 -0.602815" rpy="0.0 9.99999997475e-07 -1.57079632679"/>
     <parent link="rx78_Null_041_link"/>
     <child link="rx78_Null_044_link"/>
   </joint>
+  
   <link name="rx78_Null_045_link"/>
   <joint name="rx78_Null_045_joint" type="fixed">
     <origin xyz="0.57326 -0.801899 -0.602816" rpy="0.0 9.99999997475e-07 -1.57079632679"/>
     <parent link="rx78_Null_041_link"/>
     <child link="rx78_Null_045_link"/>
   </joint>
+  
   <link name="rx78_Null_046_link">
     <inertial>
       <origin xyz="2.82212055625e-05 -0.737319618093 0.173155485748" rpy="-3.14150846626 0.237244874889 1.57143681594"/>
@@ -1948,6 +2104,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="lleg_ankle_p_mimic" type="revolute">
     <origin xyz="1e-07 -1e-07 0.0" rpy="0.0 -9.99999997475e-07 0.0"/>
     <axis xyz="1 0 0"/>
@@ -1957,6 +2114,7 @@
     <dynamics damping="3e2" friction="1e3"/>
     <mimic joint="lleg_ankle_p" multiplier="-0.5"/>
   </joint>
+  
   <link name="rx78_Null_085_addition_null0_link">
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -1970,6 +2128,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="rleg_crotch_p" type="revolute">
     <origin xyz="-1.15 1e-07 -0.535484" rpy="0.0 -0.0 0.0"/>
     <axis xyz="1 0 0"/>
@@ -1978,6 +2137,7 @@
     <limit effort="1000000000" lower="-1.57079632679" upper="1.0471975512" velocity="1000000"/>
     <dynamics damping="3e2" friction="1e3"/>
   </joint>
+  
   <link name="rx78_Null_085_link">
     <inertial>
       <origin xyz="-0.0135153209052 2.64767762102e-06 -0.0757687336266" rpy="3.14098251543 1.38399750739 3.14105439268"/>
@@ -1995,6 +2155,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="rleg_crotch_r" type="revolute">
     <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
     <axis xyz="0 -1 0"/>
@@ -2003,6 +2164,7 @@
     <limit effort="1000000000" lower="-0.785398163397" upper="0.349065850399" velocity="1000000"/>
     <dynamics damping="3e2" friction="1e3"/>
   </joint>
+  
   <link name="rx78_Null_086_link">
     <inertial>
       <origin xyz="0.00203901146565 -0.00515317215416 -1.31974901174" rpy="-1.80118872878 1.55184586602 1.37327285919"/>
@@ -2020,6 +2182,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="rleg_crotch_y" type="revolute">
     <origin xyz="0.0 0.0 -0.684517" rpy="0.0 -0.0 0.0"/>
     <axis xyz="0 0 1"/>
@@ -2028,6 +2191,7 @@
     <limit effort="1000000000" lower="-0.785398163397" upper="0.785398163397" velocity="1000000"/>
     <dynamics damping="3e2" friction="1e3"/>
   </joint>
+  
   <link name="rx78_Null_087_link">
     <inertial>
       <origin xyz="0.00738557633869 -0.265625016119 -0.455509592631" rpy="1.41304149865 -0.794894894003 -1.4943966775"/>
@@ -2045,6 +2209,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="rleg_knee_p" type="revolute">
     <origin xyz="1e-07 0.423796 -2.71182" rpy="0.0 -0.0 0.0"/>
     <axis xyz="1 0 0"/>
@@ -2053,6 +2218,7 @@
     <limit effort="1000000000" lower="-0.1308996939" upper="1.0471975512" velocity="1000000"/>
     <dynamics damping="3e2" friction="1e3"/>
   </joint>
+  
   <link name="rx78_Null_088_link">
     <inertial>
       <origin xyz="-0.032002427935 -0.220127772647 -2.65674644223" rpy="1.82217474623 1.50400093429 1.86096188398"/>
@@ -2070,6 +2236,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="rleg_knee_p2" type="revolute">
     <origin xyz="-4.01e-05 -0.162996 -0.408183" rpy="0.0 -0.0 0.0"/>
     <axis xyz="1 0 0"/>
@@ -2078,6 +2245,7 @@
     <limit effort="1000000000" lower="-0.1308996939" upper="1.0471975512" velocity="1000000"/>
     <dynamics damping="3e2" friction="1e3"/>
   </joint>
+  
   <link name="rx78_Null_089_link">
     <inertial>
       <origin xyz="0.000306450046463 -0.350349044926 -0.351267831403" rpy="1.57079068871 -0.227386769262 1.57079507041"/>
@@ -2095,6 +2263,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="rleg_ankle_p" type="revolute">
     <origin xyz="-0.000301 0.221804 -6.02553" rpy="0.0 9.99999997475e-07 0.0"/>
     <axis xyz="1 0 0"/>
@@ -2103,6 +2272,7 @@
     <limit effort="1000000000" lower="-1.0471975512" upper="1.0471975512" velocity="1000000"/>
     <dynamics damping="3e2" friction="1e3"/>
   </joint>
+  
   <link name="rx78_Null_090_link">
     <inertial>
       <origin xyz="0.314183675973 -0.000306849416419 -0.247403252761" rpy="2.71210529049 -5.83214996164e-06 -1.57077282755"/>
@@ -2120,6 +2290,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="rleg_ankle_r_mimic" type="revolute">
     <origin xyz="2.99e-05 -5e-07 -0.716289" rpy="3.0000001061e-06 -0.0 1.5707763268"/>
     <axis xyz="-1 0 0"/>
@@ -2129,6 +2300,7 @@
     <dynamics damping="3e2" friction="1e3"/>
     <mimic joint="rleg_ankle_r" multiplier="1.0"/>
   </joint>
+  
   <link name="rx78_Null_091_link">
     <inertial>
       <origin xyz="-0.312746680517 0.00670553840076 -0.158160608584" rpy="-3.12123810968 0.240489342154 0.0203922129746"/>
@@ -2146,6 +2318,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="rleg_ankle_r" type="revolute">
     <origin xyz="0.0011439 -1.44561 -0.716286" rpy="4.99999987365e-06 -0.0 1.5707753268"/>
     <axis xyz="-1 0 0"/>
@@ -2154,30 +2327,35 @@
     <limit effort="1000000000" lower="-0.523598775598" upper="0.523598775598" velocity="1000000"/>
     <dynamics damping="3e2" friction="1e3"/>
   </joint>
+  
   <link name="rx78_Null_092_link"/>
   <joint name="rx78_Null_092_joint" type="fixed">
     <origin xyz="-1.30973 0.374846 -0.538731" rpy="-3.14159165359 -3.999999989e-06 -1.5707753268"/>
     <parent link="rx78_Null_091_link"/>
     <child link="rx78_Null_092_link"/>
   </joint>
+  
   <link name="rx78_Null_093_link"/>
   <joint name="rx78_Null_093_joint" type="fixed">
     <origin xyz="-1.30971 -0.373144 -0.538727" rpy="-3.14159165359 -3.999999989e-06 -1.5707753268"/>
     <parent link="rx78_Null_091_link"/>
     <child link="rx78_Null_093_link"/>
   </joint>
+  
   <link name="rx78_Null_094_link"/>
   <joint name="rx78_Null_094_joint" type="fixed">
     <origin xyz="0.573261 0.802745 -0.602821" rpy="9.99999997475e-07 -3.999999989e-06 -1.5707753268"/>
     <parent link="rx78_Null_091_link"/>
     <child link="rx78_Null_094_link"/>
   </joint>
+  
   <link name="rx78_Null_095_link"/>
   <joint name="rx78_Null_095_joint" type="fixed">
     <origin xyz="0.573295 -0.801055 -0.602814" rpy="9.99999997475e-07 -3.999999989e-06 -1.5707753268"/>
     <parent link="rx78_Null_091_link"/>
     <child link="rx78_Null_095_link"/>
   </joint>
+  
   <link name="rx78_Null_030_link">
     <inertial>
       <origin xyz="0.000301946954624 -0.736498802212 0.173153629751" rpy="3.14157717957 -0.237664673071 -1.57091308803"/>
@@ -2195,6 +2373,7 @@
       </geometry>
     </collision>
   </link>
+  
   <joint name="rleg_ankle_p_mimic" type="revolute">
     <origin xyz="3e-07 1e-07 0.0" rpy="0.0 -9.99999997475e-07 0.0"/>
     <axis xyz="1 0 0"/>
@@ -2204,10 +2383,12 @@
     <dynamics damping="3e2" friction="1e3"/>
     <mimic joint="rleg_ankle_p" multiplier="-0.5"/>
   </joint>
-  <gazebo reference="torso_waist_y">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="torso_waist_y"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+
   <transmission name="torso_waist_y_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="torso_waist_y">
@@ -2217,10 +2398,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="torso_waist_p">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+
+  <!-- <gazebo reference="torso_waist_p"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+
   <transmission name="torso_waist_p_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="torso_waist_p">
@@ -2230,10 +2413,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="torso_waist_p2">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+
+  <!-- <gazebo reference="torso_waist_p2"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+
   <transmission name="torso_waist_p2_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="torso_waist_p2">
@@ -2243,10 +2428,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="head_neck_y">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+
+  <!-- <gazebo reference="head_neck_y"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+
   <transmission name="head_neck_y_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="head_neck_y">
@@ -2256,10 +2443,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="head_neck_p">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+
+  <!-- <gazebo reference="head_neck_p"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+
   <transmission name="head_neck_p_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="head_neck_p">
@@ -2269,10 +2458,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="torso_rthrust_p">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+
+  <!-- <gazebo reference="torso_rthrust_p"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+
   <transmission name="torso_rthrust_p_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="torso_rthrust_p">
@@ -2282,10 +2473,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="torso_rthrust_r">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+
+  <!-- <gazebo reference="torso_rthrust_r"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+
   <transmission name="torso_rthrust_r_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="torso_rthrust_r">
@@ -2295,10 +2488,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="torso_lthrust_p">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+
+  <!-- <gazebo reference="torso_lthrust_p"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="torso_lthrust_p_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="torso_lthrust_p">
@@ -2308,10 +2503,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="torso_lthrust_r">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="torso_lthrust_r"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="torso_lthrust_r_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="torso_lthrust_r">
@@ -2321,10 +2518,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="larm_shoulder_p">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="larm_shoulder_p"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="larm_shoulder_p_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="larm_shoulder_p">
@@ -2334,10 +2533,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="larm_shoulder_r">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="larm_shoulder_r"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="larm_shoulder_r_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="larm_shoulder_r">
@@ -2347,10 +2548,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="larm_shoulder_y">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="larm_shoulder_y"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="larm_shoulder_y_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="larm_shoulder_y">
@@ -2360,10 +2563,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="larm_elbow_p">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="larm_elbow_p"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="larm_elbow_p_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="larm_elbow_p">
@@ -2373,10 +2578,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="larm_elbow_p2">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="larm_elbow_p2"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="larm_elbow_p2_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="larm_elbow_p2">
@@ -2386,10 +2593,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="larm_wrist_y">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="larm_wrist_y"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="larm_wrist_y_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="larm_wrist_y">
@@ -2399,10 +2608,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="larm_wrist_r">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="larm_wrist_r"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="larm_wrist_r_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="larm_wrist_r">
@@ -2412,10 +2623,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="larm_gripper_middle0_mimic">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="larm_gripper_middle0_mimic"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="larm_gripper_middle0_mimic_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="larm_gripper_middle0_mimic">
@@ -2425,10 +2638,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="larm_gripper_middle1_mimic">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+
+  <!-- <gazebo reference="larm_gripper_middle1_mimic"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="larm_gripper_middle1_mimic_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="larm_gripper_middle1_mimic">
@@ -2438,10 +2653,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="larm_gripper_middle2_mimic">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="larm_gripper_middle2_mimic"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="larm_gripper_middle2_mimic_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="larm_gripper_middle2_mimic">
@@ -2451,10 +2668,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="larm_gripper_ring0_mimic">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="larm_gripper_ring0_mimic"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="larm_gripper_ring0_mimic_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="larm_gripper_ring0_mimic">
@@ -2464,10 +2683,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="larm_gripper_ring1_mimic">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="larm_gripper_ring1_mimic"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="larm_gripper_ring1_mimic_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="larm_gripper_ring1_mimic">
@@ -2477,10 +2698,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="larm_gripper_ring2_mimic">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="larm_gripper_ring2_mimic"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="larm_gripper_ring2_mimic_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="larm_gripper_ring2_mimic">
@@ -2490,10 +2713,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="larm_gripper_little0_mimic">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="larm_gripper_little0_mimic"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="larm_gripper_little0_mimic_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="larm_gripper_little0_mimic">
@@ -2503,10 +2728,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="larm_gripper_little1_mimic">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="larm_gripper_little1_mimic"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="larm_gripper_little1_mimic_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="larm_gripper_little1_mimic">
@@ -2516,10 +2743,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="larm_gripper_little2_mimic">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="larm_gripper_little2_mimic"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="larm_gripper_little2_mimic_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="larm_gripper_little2_mimic">
@@ -2529,10 +2758,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="larm_gripper_index0_mimic">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="larm_gripper_index0_mimic"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="larm_gripper_index0_mimic_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="larm_gripper_index0_mimic">
@@ -2542,10 +2773,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="larm_gripper_index1_mimic">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="larm_gripper_index1_mimic"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="larm_gripper_index1_mimic_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="larm_gripper_index1_mimic">
@@ -2555,10 +2788,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="larm_gripper_index2_mimic">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="larm_gripper_index2_mimic"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="larm_gripper_index2_mimic_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="larm_gripper_index2_mimic">
@@ -2568,10 +2803,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="larm_gripper">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="larm_gripper"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="larm_gripper_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="larm_gripper">
@@ -2581,10 +2818,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="larm_gripper_thumb1_mimic">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="larm_gripper_thumb1_mimic"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="larm_gripper_thumb1_mimic_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="larm_gripper_thumb1_mimic">
@@ -2594,10 +2833,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="larm_gripper_thumb2_mimic">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="larm_gripper_thumb2_mimic"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="larm_gripper_thumb2_mimic_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="larm_gripper_thumb2_mimic">
@@ -2607,10 +2848,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="rarm_shoulder_p">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="rarm_shoulder_p"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="rarm_shoulder_p_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="rarm_shoulder_p">
@@ -2620,10 +2863,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="rarm_shoulder_r">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="rarm_shoulder_r"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="rarm_shoulder_r_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="rarm_shoulder_r">
@@ -2633,10 +2878,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="rarm_shoulder_y">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="rarm_shoulder_y"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="rarm_shoulder_y_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="rarm_shoulder_y">
@@ -2646,10 +2893,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="rarm_elbow_p">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="rarm_elbow_p"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="rarm_elbow_p_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="rarm_elbow_p">
@@ -2659,10 +2908,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="rarm_elbow_p2">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="rarm_elbow_p2"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="rarm_elbow_p2_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="rarm_elbow_p2">
@@ -2672,10 +2923,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="rarm_wrist_y">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="rarm_wrist_y"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="rarm_wrist_y_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="rarm_wrist_y">
@@ -2685,10 +2938,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="rarm_wrist_r">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="rarm_wrist_r"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="rarm_wrist_r_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="rarm_wrist_r">
@@ -2698,10 +2953,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="rarm_gripper">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="rarm_gripper"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="rarm_gripper_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="rarm_gripper">
@@ -2711,10 +2968,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="rarm_gripper_thumb1_mimic">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="rarm_gripper_thumb1_mimic"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="rarm_gripper_thumb1_mimic_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="rarm_gripper_thumb1_mimic">
@@ -2724,10 +2983,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="rarm_gripper_thumb2_mimic">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="rarm_gripper_thumb2_mimic"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="rarm_gripper_thumb2_mimic_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="rarm_gripper_thumb2_mimic">
@@ -2737,10 +2998,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="rarm_gripper_middle0_mimic">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="rarm_gripper_middle0_mimic"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="rarm_gripper_middle0_mimic_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="rarm_gripper_middle0_mimic">
@@ -2750,10 +3013,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="rarm_gripper_middle1_mimic">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="rarm_gripper_middle1_mimic"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="rarm_gripper_middle1_mimic_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="rarm_gripper_middle1_mimic">
@@ -2763,10 +3028,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="rarm_gripper_middle2_mimic">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="rarm_gripper_middle2_mimic"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="rarm_gripper_middle2_mimic_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="rarm_gripper_middle2_mimic">
@@ -2776,10 +3043,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="rarm_gripper_index0_mimic">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="rarm_gripper_index0_mimic"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="rarm_gripper_index0_mimic_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="rarm_gripper_index0_mimic">
@@ -2789,10 +3058,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="rarm_gripper_index1_mimic">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="rarm_gripper_index1_mimic"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="rarm_gripper_index1_mimic_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="rarm_gripper_index1_mimic">
@@ -2802,10 +3073,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="rarm_gripper_index2_mimic">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="rarm_gripper_index2_mimic"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="rarm_gripper_index2_mimic_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="rarm_gripper_index2_mimic">
@@ -2815,10 +3088,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="rarm_gripper_little0_mimic">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="rarm_gripper_little0_mimic"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="rarm_gripper_little0_mimic_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="rarm_gripper_little0_mimic">
@@ -2828,10 +3103,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="rarm_gripper_little1_mimic">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="rarm_gripper_little1_mimic"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="rarm_gripper_little1_mimic_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="rarm_gripper_little1_mimic">
@@ -2841,10 +3118,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="rarm_gripper_little2_mimic">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="rarm_gripper_little2_mimic"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="rarm_gripper_little2_mimic_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="rarm_gripper_little2_mimic">
@@ -2854,10 +3133,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="rarm_gripper_ring0_mimic">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="rarm_gripper_ring0_mimic"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="rarm_gripper_ring0_mimic_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="rarm_gripper_ring0_mimic">
@@ -2867,10 +3148,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="rarm_gripper_ring1_mimic">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="rarm_gripper_ring1_mimic"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="rarm_gripper_ring1_mimic_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="rarm_gripper_ring1_mimic">
@@ -2880,10 +3163,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="rarm_gripper_ring2_mimic">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="rarm_gripper_ring2_mimic"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="rarm_gripper_ring2_mimic_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="rarm_gripper_ring2_mimic">
@@ -2893,10 +3178,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="rleg_crotch_p_front_mimic">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="rleg_crotch_p_front_mimic"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="rleg_crotch_p_front_mimic_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="rleg_crotch_p_front_mimic">
@@ -2906,10 +3193,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="rleg_crotch_p_back_mimic">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="rleg_crotch_p_back_mimic"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+
   <transmission name="rleg_crotch_p_back_mimic_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="rleg_crotch_p_back_mimic">
@@ -2919,10 +3208,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="rleg_crotch_r_mimic">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="rleg_crotch_r_mimic"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="rleg_crotch_r_mimic_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="rleg_crotch_r_mimic">
@@ -2932,10 +3223,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="lleg_crotch_p_back_mimic">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="lleg_crotch_p_back_mimic"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="lleg_crotch_p_back_mimic_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="lleg_crotch_p_back_mimic">
@@ -2945,10 +3238,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="lleg_crotch_p_front_mimic">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="lleg_crotch_p_front_mimic"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="lleg_crotch_p_front_mimic_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="lleg_crotch_p_front_mimic">
@@ -2958,10 +3253,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="lleg_crotch_r_mimic">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="lleg_crotch_r_mimic"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="lleg_crotch_r_mimic_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="lleg_crotch_r_mimic">
@@ -2971,10 +3268,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="lleg_crotch_p">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="lleg_crotch_p"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="lleg_crotch_p_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="lleg_crotch_p">
@@ -2984,10 +3283,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="lleg_crotch_r">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="lleg_crotch_r"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="lleg_crotch_r_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="lleg_crotch_r">
@@ -2997,10 +3298,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="lleg_crotch_y">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="lleg_crotch_y"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="lleg_crotch_y_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="lleg_crotch_y">
@@ -3010,10 +3313,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="lleg_knee_p">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="lleg_knee_p"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="lleg_knee_p_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="lleg_knee_p">
@@ -3023,10 +3328,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="lleg_knee_p2">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="lleg_knee_p2"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="lleg_knee_p2_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="lleg_knee_p2">
@@ -3036,10 +3343,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="lleg_ankle_p">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="lleg_ankle_p"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="lleg_ankle_p_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="lleg_ankle_p">
@@ -3049,10 +3358,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="lleg_ankle_r_mimic">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="lleg_ankle_r_mimic"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="lleg_ankle_r_mimic_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="lleg_ankle_r_mimic">
@@ -3062,10 +3373,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="lleg_ankle_r">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="lleg_ankle_r"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="lleg_ankle_r_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="lleg_ankle_r">
@@ -3075,10 +3388,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="lleg_ankle_p_mimic">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="lleg_ankle_p_mimic"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="lleg_ankle_p_mimic_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="lleg_ankle_p_mimic">
@@ -3088,10 +3403,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="rleg_crotch_p">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="rleg_crotch_p"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="rleg_crotch_p_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="rleg_crotch_p">
@@ -3101,10 +3418,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="rleg_crotch_r">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="rleg_crotch_r"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="rleg_crotch_r_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="rleg_crotch_r">
@@ -3114,10 +3433,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="rleg_crotch_y">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="rleg_crotch_y"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="rleg_crotch_y_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="rleg_crotch_y">
@@ -3127,10 +3448,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="rleg_knee_p">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="rleg_knee_p"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="rleg_knee_p_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="rleg_knee_p">
@@ -3140,10 +3463,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="rleg_knee_p2">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="rleg_knee_p2"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="rleg_knee_p2_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="rleg_knee_p2">
@@ -3153,10 +3478,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="rleg_ankle_p">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="rleg_ankle_p"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="rleg_ankle_p_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="rleg_ankle_p">
@@ -3166,10 +3493,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="rleg_ankle_r_mimic">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="rleg_ankle_r_mimic"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="rleg_ankle_r_mimic_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="rleg_ankle_r_mimic">
@@ -3179,10 +3508,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="rleg_ankle_r">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="rleg_ankle_r"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="rleg_ankle_r_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="rleg_ankle_r">
@@ -3192,10 +3523,12 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="rleg_ankle_p_mimic">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>0</implicitSpringDamper>
-  </gazebo>
+  
+  <!-- <gazebo reference="rleg_ankle_p_mimic"> -->
+  <!--   <provideFeedback>1</provideFeedback> -->
+  <!--   <implicitSpringDamper>0</implicitSpringDamper> -->
+  <!-- </gazebo> -->
+  
   <transmission name="rleg_ankle_p_mimic_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="rleg_ankle_p_mimic">
@@ -3205,997 +3538,999 @@
       <mechanicalReduction>1.0</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo reference="base_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_018_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_017_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_016_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_015_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_014_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_013_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_012_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_011_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_010_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_009_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_007_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_008_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_005_addition_null0_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_005_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_006_addition_null0_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_006_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_004_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_001_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_002_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_003_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_066_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_067_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_069_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_068_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_070_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_071_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_072_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_073_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_074_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_075_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_076_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_077_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_059_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_060_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_061_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_062_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_063_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_064_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_065_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_048_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_049_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_050_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_051_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_052_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_053_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_054_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_055_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_056_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_057_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_058_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_021_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_022_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_023_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_024_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_025_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_026_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_027_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_028_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_029_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_078_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_079_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_080_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_081_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_082_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_083_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_084_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_031_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_032_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_033_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_034_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_047_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_035_addition_null0_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_035_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_036_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_037_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_038_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_039_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_040_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_041_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_042_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_043_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_044_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_045_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_046_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_085_addition_null0_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_085_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_086_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_087_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_088_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_089_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_090_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_091_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_092_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_093_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_094_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_095_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo reference="rx78_Null_030_link">
-    <selfCollide>false</selfCollide>
-    <mu1>1.5</mu1>
-    <mu2>1.5</mu2>
-    <mu2>9000</mu2>
-    <kp>140000000.0</kp>
-    <kd>280000.0</kd>
-    <fdir1>1 0 0</fdir1>
-    <maxVel>10.0</maxVel>
-  </gazebo>
-  <gazebo>
-    <plugin filename="libgazebo_ros_control.so" name="gazebo_ros_control">
-      <robotNamespace>/</robotNamespace>
-      <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
-      <legacyModeNS>true</legacyModeNS>
-    </plugin>
-    <plugin name="ground_truth" filename="libgazebo_ros_p3d.so">
-      <frameName>world</frameName>
-      <bodyName>base_link</bodyName>
-      <topicName>base_link_ground_truth</topicName>
-      <updateRate>30.0</updateRate>
-    </plugin>
-  </gazebo>
+  
+  <!-- <gazebo reference="base_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_018_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_017_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_016_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_015_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_014_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_013_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_012_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_011_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_010_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_009_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_007_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_008_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_005_addition_null0_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_005_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_006_addition_null0_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_006_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_004_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_001_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_002_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_003_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_066_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_067_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_069_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_068_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_070_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_071_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_072_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_073_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_074_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_075_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_076_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_077_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_059_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_060_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_061_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_062_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_063_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_064_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_065_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_048_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_049_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_050_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_051_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_052_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_053_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_054_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_055_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_056_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_057_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_058_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_021_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_022_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_023_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_024_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_025_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_026_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_027_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_028_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_029_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_078_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_079_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_080_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_081_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_082_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_083_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_084_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_031_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_032_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_033_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_034_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_047_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_035_addition_null0_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_035_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_036_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_037_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_038_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_039_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_040_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_041_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_042_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_043_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_044_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_045_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_046_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_085_addition_null0_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_085_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_086_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_087_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_088_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_089_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_090_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_091_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_092_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_093_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_094_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_095_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo reference="rx78_Null_030_link"> -->
+  <!--   <selfCollide>false</selfCollide> -->
+  <!--   <mu1>1.5</mu1> -->
+  <!--   <mu2>1.5</mu2> -->
+  <!--   <mu2>9000</mu2> -->
+  <!--   <kp>140000000.0</kp> -->
+  <!--   <kd>280000.0</kd> -->
+  <!--   <fdir1>1 0 0</fdir1> -->
+  <!--   <maxVel>10.0</maxVel> -->
+  <!-- </gazebo> -->
+  <!-- <gazebo> -->
+  <!--   <plugin filename="libgazebo_ros_control.so" name="gazebo_ros_control"> -->
+  <!--     <robotNamespace>/</robotNamespace> -->
+  <!--     <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType> -->
+  <!--     <legacyModeNS>true</legacyModeNS> -->
+  <!--   </plugin> -->
+  <!--   <plugin name="ground_truth" filename="libgazebo_ros_p3d.so"> -->
+  <!--     <frameName>world</frameName> -->
+  <!--     <bodyName>base_link</bodyName> -->
+  <!--     <topicName>base_link_ground_truth</topicName> -->
+  <!--     <updateRate>30.0</updateRate> -->
+  <!--   </plugin> -->
+  <!-- </gazebo> -->
+
 </robot>
